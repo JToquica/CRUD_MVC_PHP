@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +101,9 @@
 
                 if ($pagina == "registro" ||
                     $pagina == "ingreso" ||
-                    $pagina == "inicio") {
+                    $pagina == "inicio" || 
+                    $pagina == "salir" ||
+                    $pagina == "editar") {
 
                     include "pages/".$pagina.".php";
 
